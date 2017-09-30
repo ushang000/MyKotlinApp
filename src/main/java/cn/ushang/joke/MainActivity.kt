@@ -12,8 +12,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.*
 
 class MainActivity : AppCompatActivity() {
-    val titles = arrayOf("热门", "24小时", "热图", "文字", "穿越", "糗图", "新鲜")
-    val category = arrayOf("hot", "24hr", "imgrank", "text", "history", "pic", "textnew")
+    private val titles = arrayOf("热门", "24小时", "热图", "文字", "穿越", "糗图", "新鲜")
+    private val category = arrayOf("hot", "24hr", "imgrank", "text", "history", "pic", "textnew")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
