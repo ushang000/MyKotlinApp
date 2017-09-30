@@ -19,8 +19,8 @@ import org.jsoup.Jsoup
  * Created by ushang000 on 2017/9/27.
  */
  class HomeFragment(val category:String) : Fragment (){
-    val user = ArrayList<User>()
-    val adapter = JokeAdapter(user){
+    private val user = ArrayList<User>()
+    private val adapter = JokeAdapter(user){
         val intent=Intent(activity,Main2Activity::class.java)
         intent.putExtra("href",it.href)
         intent.putExtra("img",it.img)
